@@ -1,15 +1,16 @@
 package net.momo.kotlinsprintboot
 
 import net.momo.kotlinsprintboot.domain.Message
+import net.momo.kotlinsprintboot.domain.Project
 import net.momo.kotlinsprintboot.services.MessageService
+import net.momo.kotlinsprintboot.services.ProjectDTO
+import net.momo.kotlinsprintboot.services.ProjectService
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.data.annotation.Id
+import org.springframework.data.relational.core.mapping.Column
 import org.springframework.data.relational.core.mapping.Table
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @SpringBootApplication
 class KotlinsprintbootApplication
@@ -26,5 +27,17 @@ class MessageResource(val service: MessageService) {
     @PostMapping
     fun post(@RequestBody message: Message) {
         service.post(message)
+    }
+}
+
+@RestController
+@RequestMapping("/api/projects")
+class ProjectResource(val service: ProjectService) {
+    @GetMapping()
+    fun getAll(): List<Project> = service.getAll()
+
+    @PostMapping
+    fun post(@RequestBody project: ProjectDTO) {
+        service.save(project)
     }
 }
