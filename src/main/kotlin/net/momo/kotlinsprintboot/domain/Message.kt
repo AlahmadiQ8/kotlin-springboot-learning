@@ -1,8 +1,18 @@
 package net.momo.kotlinsprintboot.domain
 
-import org.springframework.data.annotation.Id
-import org.springframework.data.relational.core.mapping.Column
-import org.springframework.data.relational.core.mapping.Table
+import javax.persistence.*
 
-@Table("messages")
-data class Message(@Id val id: String?, @Column("text") val text: String)
+@Table(name = "messages")
+@Entity
+class Message(
+    @Column(name = "text") val text: String,
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", unique = true, updatable = false)
+    var id: String? = null,
+) {
+    constructor() : this("") {
+
+    }
+}

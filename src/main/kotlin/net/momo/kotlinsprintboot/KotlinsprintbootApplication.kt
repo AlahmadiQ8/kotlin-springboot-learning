@@ -7,9 +7,6 @@ import net.momo.kotlinsprintboot.services.ProjectDTO
 import net.momo.kotlinsprintboot.services.ProjectService
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.data.annotation.Id
-import org.springframework.data.relational.core.mapping.Column
-import org.springframework.data.relational.core.mapping.Table
 import org.springframework.web.bind.annotation.*
 
 @SpringBootApplication

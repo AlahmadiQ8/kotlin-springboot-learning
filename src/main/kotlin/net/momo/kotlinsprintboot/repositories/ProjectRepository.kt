@@ -1,8 +1,7 @@
 package net.momo.kotlinsprintboot.repositories
 
 import net.momo.kotlinsprintboot.domain.Project
-import org.springframework.data.jdbc.repository.query.Query
-import org.springframework.data.repository.CrudRepository
+import org.springframework.data.jpa.repository.JpaRepository
 
-interface ProjectRepository: CrudRepository<Project, String> {
+interface ProjectRepository: JpaRepository<Project, String> {
 }
