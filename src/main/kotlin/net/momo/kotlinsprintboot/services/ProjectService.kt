@@ -15,8 +15,8 @@ class ProjectService(val db: ProjectRepository) {
         return db.findAll().toList()
     }
 
-    fun findById(id: String): Project? {
-        return db.findById(id).orElse(null)
+    fun findByNameContains(name: String): List<Project> {
+        return db.findByNameContains(name)
     }
 
     fun save(project: ProjectDTO): Project {

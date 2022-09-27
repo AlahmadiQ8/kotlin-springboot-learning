@@ -31,7 +31,13 @@ class MessageResource(val service: MessageService) {
 @RequestMapping("/api/projects")
 class ProjectResource(val service: ProjectService) {
     @GetMapping()
-    fun getAll(): List<Project> = service.getAll()
+    fun getAll(@RequestParam name: String?): List<Project> {
+        if (name != null) {
+            return service.findByNameContains(name)
+        }
+
+        return service.getAll()
+    }
 
     @PostMapping
     fun post(@RequestBody project: ProjectDTO) {

@@ -39,3 +39,9 @@ GET http://localhost:8080/
 
 ### Get all the projects
 GET http://localhost:8080/api/projects
+
+### Get all the projects
+GET http://localhost:8080/api/projects
+
+### Get all the projects
+GET http://localhost:8080/api/projects?name=Priv
