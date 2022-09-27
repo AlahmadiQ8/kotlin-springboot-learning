@@ -1,3 +1,51 @@
+GET http://localhost:8080/api/projects
+
+<> 2022-09-27T210125.200.json
+
+###
+
+GET http://localhost:8080/api/projects
+
+<> 2022-09-27T205746.500.json
+
+###
+
+GET http://localhost:8080/api/projects
+
+<> 2022-09-27T202954.500.json
+
+###
+
+GET http://localhost:8080/api/projects
+
+<> 2022-09-27T200451.500.json
+
+###
+
+GET http://localhost:8080/api/projects?name=Priv
+
+<> 2022-09-27T200140.500.json
+
+###
+
+GET http://localhost:8080/api/projects
+
+<> 2022-09-27T200000.500.json
+
+###
+
+GET http://localhost:8080/api/projects
+
+<> 2022-09-27T195909.500.json
+
+###
+
+GET http://localhost:8080/api/projects
+
+<> 2022-09-27T195351.500.json
+
+###
+
 GET http://localhost:8080/api/projects?name=Priv
 
 <> 2022-09-27T192147.200.json
@@ -343,94 +391,6 @@ Content-Type: application/json
 }
 
 <> 2022-09-22T224828.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T224611.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T224431.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T224243.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T223825.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T223824.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T223821.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T223820.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T223753.500.json
 
 ###
 

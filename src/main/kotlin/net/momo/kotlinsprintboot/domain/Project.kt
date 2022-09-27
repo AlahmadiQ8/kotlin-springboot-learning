@@ -17,7 +17,7 @@ class Project(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id: String? = null,
+    var id: Long? = null,
 
     @OneToMany(mappedBy = "project", fetch = FetchType.EAGER, cascade = [CascadeType.ALL])
     open var tasks: MutableList<Task> = mutableListOf()
