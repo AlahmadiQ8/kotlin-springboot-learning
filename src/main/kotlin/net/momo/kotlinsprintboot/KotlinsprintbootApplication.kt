@@ -7,10 +7,16 @@ import net.momo.kotlinsprintboot.repositories.ProjectRepository
 import net.momo.kotlinsprintboot.services.MessageService
 import net.momo.kotlinsprintboot.services.ProjectDTO
 import net.momo.kotlinsprintboot.services.ProjectService
+import org.apache.juli.logging.Log
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.http.HttpStatus
+import org.springframework.stereotype.Controller
+import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.*
+import org.springframework.web.server.ResponseStatusException
+import java.util.StringJoiner
 import javax.annotation.PostConstruct
 
 @SpringBootApplication
@@ -69,8 +75,26 @@ class ProjectResource(val service: ProjectService) {
         return service.getAll()
     }
 
+    @GetMapping("/{id}")
+    fun getById(@PathVariable id: Long): Project {
+        return service.findById(id).get()
+//            .orElseThrow { ResponseStatusException(HttpStatus.NOT_FOUND) }
+    }
+
     @PostMapping
     fun post(@RequestBody project: ProjectDTO) {
         service.save(project)
+    }
+}
+
+@Controller
+@RequestMapping("/projects")
+class ProjectController(val service: ProjectService) {
+
+    @GetMapping
+    fun getProjects(model: Model): String {
+        val projects = service.getAll().map { it.name?.let { it1 -> ProjectDTO(it1, mutableListOf()) } }
+        model.addAttribute("projects", projects)
+        return "projects"
     }
 }

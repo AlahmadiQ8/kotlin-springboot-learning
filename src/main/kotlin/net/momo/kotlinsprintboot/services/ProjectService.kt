@@ -4,10 +4,14 @@ import net.momo.kotlinsprintboot.domain.Project
 import net.momo.kotlinsprintboot.domain.Task
 import net.momo.kotlinsprintboot.domain.TaskStatus
 import net.momo.kotlinsprintboot.repositories.ProjectRepository
+import org.jetbrains.annotations.NotNull
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
+import java.util.LongSummaryStatistics
+import java.util.Optional
 import java.util.StringJoiner
 import javax.print.DocFlavor.STRING
+import javax.validation.constraints.NotBlank
 
 @Service
 class ProjectService(val db: ProjectRepository) {
@@ -21,6 +25,10 @@ class ProjectService(val db: ProjectRepository) {
 
     fun findByNameContains(name: String): List<Project> {
         return db.findByNameContains(name)
+    }
+
+    fun findById(id: Long): Optional<Project> {
+        return db.findById(id)
     }
 
     fun save(project: ProjectDTO): Project {
@@ -37,5 +45,10 @@ class ProjectService(val db: ProjectRepository) {
     }
 }
 
-data class ProjectDTO(val name: String, val tasks: List<TaskDTO>?)
+data class ProjectDTO(
+    @NotBlank
+    val name: String,
+
+    val tasks: List<TaskDTO>?
+    )
 data class TaskDTO(val name: String)

@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.repository.PagingAndSortingRepository
 import javax.annotation.PostConstruct
 
-interface ProjectRepository: PagingAndSortingRepository<Project, String> {
+interface ProjectRepository: PagingAndSortingRepository<Project, Long> {
     fun findByNameContains(name: String): List<Project>
 }

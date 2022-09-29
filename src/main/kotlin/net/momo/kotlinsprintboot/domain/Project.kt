@@ -14,7 +14,7 @@ class Project(
     var name: String? = "",
 
     @Column(name = "date_created")
-    var dateCreated: LocalDate? = null,
+    var dateCreated: LocalDate? = LocalDate.now(),
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
