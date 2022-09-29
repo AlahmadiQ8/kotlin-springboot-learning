@@ -1,5 +1,6 @@
 package net.momo.kotlinsprintboot.domain
 
+import org.hibernate.criterion.AggregateProjection
 import java.time.LocalDate
 import javax.persistence.*
 
@@ -20,5 +21,5 @@ class Project(
     var id: Long? = null,
 
     @OneToMany(mappedBy = "project", fetch = FetchType.EAGER, cascade = [CascadeType.ALL])
-    open var tasks: MutableList<Task> = mutableListOf()
+    var tasks: MutableList<Task> = mutableListOf()
 )

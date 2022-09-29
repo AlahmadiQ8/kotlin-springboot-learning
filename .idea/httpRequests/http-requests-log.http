@@ -1,5 +1,286 @@
 GET http://localhost:8080/api/projects
 
+<> 2022-09-29T094017.200.json
+
+###
+
+GET http://localhost:8080/api/projects
+
+<> 2022-09-29T093850.200.json
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "project with tasks!",
+  "tasks": [
+    {
+      "name": "omg 1"
+    },
+    {
+      "name": "omg 2"
+    },
+    {
+      "name": "noo"
+    }
+  ]
+}
+
+###
+
+GET http://localhost:8080/api/projects
+
+<> 2022-09-29T091219.200.json
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "project with tasks!",
+  "tasks": [
+    {
+      "name": "omg 1"
+    },
+    {
+      "name": "omg 2"
+    },
+    {
+      "name": "noo"
+    }
+  ]
+}
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "project with tasks!",
+  "tasks": [
+    {
+      "name": "omg 1"
+    },
+    {
+      "name": "omg 2"
+    },
+    {
+      "name": "noo"
+    }
+  ]
+}
+
+###
+
+GET http://localhost:8080/api/projects
+
+<> 2022-09-29T084631.200.json
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "Privefgfgt!"
+}
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "project with tasks!",
+  "tasks": [
+    {
+      "name": "omg 1"
+    },
+    {
+      "name": "omg 2"
+    },
+    {
+      "name": "noo"
+    }
+  ]
+}
+
+###
+
+GET http://localhost:8080/api/projects
+
+<> 2022-09-29T084612.200.json
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "project with tasks!",
+  "tasks": [
+    {
+      "name": "omg 1"
+    },
+    {
+      "name": "omg 2"
+    },
+    {
+      "name": "noo"
+    }
+  ]
+}
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "project with tasks!",
+  "tasks": [
+    {
+      "name": "omg 1"
+    },
+    {
+      "name": "omg 2"
+    },
+    {
+      "name": "noo"
+    }
+  ]
+}
+
+###
+
+GET http://localhost:8080/api/projects
+
+<> 2022-09-29T083739.200.json
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "project with tasks!",
+  "tasks": [
+    {
+      "name": "omg 1"
+    },
+    {
+      "name": "omg 2"
+    },
+    {
+      "name": "noo"
+    }
+  ]
+}
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "project with tasks!",
+  "tasks": [
+    {
+      "name": "omg 1"
+    },
+    {
+      "name": "omg 2"
+    },
+    {
+      "name": "noo"
+    }
+  ]
+}
+
+<> 2022-09-29T083704.500.json
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "project with tasks!",
+  "tasks": [
+    {
+      "name": "omg 1"
+    },
+    {
+      "name": "omg 2"
+    },
+    {
+      "name": "noo"
+    }
+  ]
+}
+
+<> 2022-09-29T083552.500.json
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "project with tasks!",
+  "tasks": [
+    "omg 1",
+    "omg 2",
+    "noo"
+  ]
+}
+
+<> 2022-09-29T083158.400.json
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "Privefgfgt!"
+}
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "Privet!"
+}
+
+<> 2022-09-29T082910.400.json
+
+###
+
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "name": "project with tasks!",
+  "tasks": [
+    "omg 1",
+    "omg 2",
+    "noo"
+  ]
+}
+
+<> 2022-09-29T082643.400.json
+
+###
+
+GET http://localhost:8080/api/projects
+
 <> 2022-09-27T210125.200.json
 
 ###
@@ -212,185 +493,6 @@ GET http://localhost:8080/api/projects
 GET http://localhost:8080/api/projects
 
 <> 2022-09-23T141001.200.json
-
-###
-
-GET http://localhost:8080/api/projects
-
-<> 2022-09-23T140954.200.json
-
-###
-
-GET http://localhost:8080/api/projects/
-
-<> 2022-09-23T140949.200.json
-
-###
-
-GET http://localhost:8080
-
-<> 2022-09-23T140947.200.json
-
-###
-
-GET http://localhost:8080/api/projects/
-
-<> 2022-09-23T140851.500.json
-
-###
-
-GET http://localhost:8080/api/projects
-
-<> 2022-09-23T140813.404.json
-
-###
-
-GET http://localhost:8080
-
-<> 2022-09-23T140808.200.json
-
-###
-
-GET http://localhost:8080
-
-<> 2022-09-22T230401.200.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Privet!"
-}
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Bonjour!"
-}
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T230030.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T225822.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T225820.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T225653.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T225556.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T225515.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T225513.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T225447.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T224830.500.json
-
-###
-
-POST http://localhost:8080
-Content-Type: application/json
-
-{
-  "text": "Hello!"
-}
-
-<> 2022-09-22T224828.500.json
 
 ###
 

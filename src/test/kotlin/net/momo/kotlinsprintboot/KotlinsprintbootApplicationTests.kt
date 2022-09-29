@@ -18,7 +18,7 @@ class KotlinsprintbootApplicationTests(@Autowired val projectService: ProjectSer
 
     @Test
     fun savingProjectsWorks() {
-        val savedProject = projectService.save(ProjectDTO("test project"))
+        val savedProject = projectService.save(ProjectDTO("test project", tasks = mutableListOf()))
 
         assert(savedProject != null)
     }

@@ -5,32 +5,32 @@ import javax.persistence.*
 
 @Entity
 @Table(name = "task")
-open class Task {
+open class Task (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    open var id: Long? = null
+    open var id: Long? = null,
 
     @Column(name = "name", nullable = false)
-    open var name: String = ""
+    open var name: String = "",
 
     @Column(name = "description")
-    open var description: String? = null
+    open var description: String? = null,
 
 
     @Column(name = "date_created", nullable = false)
-    open var dateCreated: LocalDate? = null
+    open var dateCreated: LocalDate? = LocalDate.now(),
 
-    @Column(name = "due_date", nullable = false)
-    open var dueDate: LocalDate? = null
+    @Column(name = "due_date", nullable = true)
+    open var dueDate: LocalDate? = null,
 
     @Enumerated
     @Column(name = "task_status", nullable = false)
-    open var taskStatus: TaskStatus? = null
+    open var taskStatus: TaskStatus? = TaskStatus.NEW,
 
     @ManyToOne
     @JoinColumn(name = "project_id")
-    open var project: Project? = null
-}
+    open var project: Project? = null,
+    )
 
 enum class TaskStatus { NEW, IN_PROGRESS, COMPLETE }

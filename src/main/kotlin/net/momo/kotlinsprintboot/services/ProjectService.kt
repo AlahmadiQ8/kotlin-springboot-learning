@@ -1,9 +1,13 @@
 package net.momo.kotlinsprintboot.services
 
 import net.momo.kotlinsprintboot.domain.Project
+import net.momo.kotlinsprintboot.domain.Task
+import net.momo.kotlinsprintboot.domain.TaskStatus
 import net.momo.kotlinsprintboot.repositories.ProjectRepository
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
+import java.util.StringJoiner
+import javax.print.DocFlavor.STRING
 
 @Service
 class ProjectService(val db: ProjectRepository) {
@@ -21,9 +25,17 @@ class ProjectService(val db: ProjectRepository) {
 
     fun save(project: ProjectDTO): Project {
         val newProject = Project(name = project.name)
+        newProject.tasks = project.tasks?.map {
+            Task(
+                name = it.name,
+                description = "description for task ${it.name}",
+                taskStatus = TaskStatus.values().random()
+            )
+        }?.toMutableList() ?: mutableListOf()
 
         return db.save(newProject)
     }
 }
 
-data class ProjectDTO(val name: String)
+data class ProjectDTO(val name: String, val tasks: List<TaskDTO>?)
+data class TaskDTO(val name: String)
